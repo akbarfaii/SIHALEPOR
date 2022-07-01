@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">halepor</string>
+    <string name="text_loremipsum">text_loremipsum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_loremipsum2">text_loremipsum2</string>
+
+    <string-array name="Status_KwH">
+        <item>Angkat App</item>
+        <item>Segel</item>
+        <item>Putus Kabel SR</item>
+        <item>Berhenti Langganan</item>
+    </string-array>
+
+</resources>

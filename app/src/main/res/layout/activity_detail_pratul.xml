@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detail.DetailPratul">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary2"
+        android:minHeight="?attr/actionBarSize"
+        android:translationZ="6dp"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <ImageView
+        android:id="@+id/icn_kembali"
+        android:layout_width="30dp"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@drawable/back"
+        android:contentDescription="todo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DETAIL PRATUL"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Petugas"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_petugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:textSize="20sp">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IDPEL"
+        android:paddingTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_idpel_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:autofillHints="postalCode"
+        android:inputType="text"
+        tools:ignore="LabelFor">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:text="NAMA PELANGGAN"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:labelFor="@+id/et_namapel_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:inputType="text"
+        tools:ignore="LabelFor" >
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:text="NO RBM" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:labelFor="@+id/et_norbm_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:enabled="false"
+        android:textSize="20sp"
+        tools:ignore="LabelFor">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:paddingTop="10dp"
+        android:text="ALAMAT PELANGGAN"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:labelFor="@+id/et_alamatpel_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:autofillHints="postalCode"
+        android:inputType="textPostalAddress"
+        android:enabled="false"
+        android:textSize="20sp"
+        tools:ignore="LabelFor">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="TARIF/DAYA"
+        android:textSize="16sp"
+        android:paddingTop="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_trfdaya_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:autofillHints="postalCode"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:ignore="LabelFor">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RP Tagihan"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_rptag_pratul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:text="STATUS"/>
+
+
+        <Spinner
+            android:id="@+id/layoutstatus_pratul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/Status_KwH"
+            android:scrollbarSize="20sp"
+            android:focusable="true"
+            android:visibility="gone">
+        </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TANGGAL"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tgl_pratul"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Tanggal"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/btn_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_calender"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foto"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pratul"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:focusable="false"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/poto_pratul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/ic_camera"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_HpPratul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="NO HANDPHONE"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEditNoHpPratul"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/txt_EditNoHpPratul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:hint="Edit Nomor Hp Pratul"
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+     <LinearLayout
+         android:id="@+id/group_Btncetak"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="20dp"
+         android:gravity="center_horizontal">
+
+         <Button
+             android:id="@+id/btn_cetakPdf"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:padding="10dp"
+             android:drawableLeft="@drawable/ic_pdf_24"
+             android:paddingStart="15dp"
+             android:drawableTint="@color/white"
+             android:backgroundTint="@color/colorPrimaryDark"
+             android:text="cetka ke pdf"
+             android:clickable="true"
+             android:textStyle="bold|normal"/>
+
+         <Button
+             android:id="@+id/btn_Edit"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+             android:textAlignment="center"
+             android:textSize="17sp"
+             android:drawableLeft="@drawable/ic_edit"
+             android:paddingStart="15dp"
+             android:drawableTint="@color/white"
+             android:backgroundTint="@color/colorPrimary2"
+             android:text="edit"
+             android:clickable="true"
+             android:textStyle="bold|normal"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/group_btnEdit"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:orientation="horizontal"
+         android:gravity="center_horizontal"
+         android:visibility="gone">
+
+         <Button
+             android:id="@+id/btn_Batal"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="5dp"
+             android:textSize="15sp"
+             android:padding="10dp"
+             android:drawableLeft="@drawable/ic_cancel"
+             android:paddingStart="15dp"
+             android:drawableTint="@color/white"
+             android:backgroundTint="#8E0131"
+             android:text="batal"
+             android:clickable="true"
+             android:textStyle="bold|normal"/>
+
+         <Button
+             android:id="@+id/btn_Simpan"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:padding="10dp"
+             android:textAlignment="center"
+             android:textSize="15sp"
+             android:paddingStart="15dp"
+             android:drawableTint="@color/white"
+             android:drawableRight="@drawable/ic_save"
+             android:backgroundTint="@color/teal_700"
+             android:text="Simpan"
+             android:clickable="true"
+             android:textStyle="bold|normal"/>
+
+     </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

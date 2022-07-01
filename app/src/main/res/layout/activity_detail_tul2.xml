@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    android:padding="20dp"
+    tools:context=".Detail.DetailTul2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDPEL"
+                android:paddingTop="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idpel_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:autofillHints="postalCode"
+                android:inputType="text"
+                tools:ignore="LabelFor">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:text="NAMA PELANGGAN"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:labelFor="@+id/namapel_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                tools:ignore="LabelFor" >
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:text="NO RBM" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:labelFor="@+id/norbm_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:text="ALAMAT PELANGGAN"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:labelFor="@+id/alamatpel_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:autofillHints="postalCode"
+                android:inputType="textPostalAddress"
+                android:textSize="16sp"
+                tools:ignore="LabelFor">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="TARIF/DAYA"
+                android:textSize="16sp"
+                android:paddingTop="10dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/trfdaya_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:autofillHints="postalCode"
+                android:inputType="text"
+                android:textSize="16sp"
+                tools:ignore="LabelFor">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RP Tagihan"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rptag_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:text="STATUS"/>
+            <Spinner
+                android:id="@+id/status_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/Status_KwH"
+                android:scrollbarSize="20sp"
+                android:focusable="true">
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TANGGAL"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tgl_tul2"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Tanggal"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/btn_calender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_calender"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessLeaf" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_tul2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+                <ImageView
+                    android:id="@+id/poto_tul2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="@drawable/ic_camera"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="NO HANDPHONE"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nohp_tul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:inputType="number">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/edit_tul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_edit"
+                android:backgroundTint="@color/colorPrimary2"
+                android:layout_gravity="right">
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
